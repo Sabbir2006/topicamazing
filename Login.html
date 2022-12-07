@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="icon" href="Resource/Pic/Icon/Logo1.ico">
+    <link rel="stylesheet" type="text/css" href="Login.css">
+<body>
+    <div id ="preloader-div"></div>
+    <div id="topbar">
+        <img id="imgLogo" src="Resource/Pic/Png/Logo1.png"></img>
+        <label id="lblWebname">Topic- 'Amazings'</label>
+    </div>
+    <div id="main-div">
+        <div id="wrapper-div">
+            <div id="toggle-div">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="signin()">Sign in</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
+            </div>            
+            <div id="social-div">                
+                <label id="status-label">Sign in with</label>
+                <img src="Resource/Pic/Png/gp.png" class="social-img">
+                <img src="Resource/Pic/Png/tw.png" class="social-img">
+                <img src="Resource/Pic/Png/fb.png" class="social-img">
+            </div>
+            <form id="signin-frm" class="input-frm" onsubmit="submit_of_signin()">
+                <input type="text" id="usretag-signin-txt" class="input-txt" placeholder="enter usertag" required>
+                <input type="password" id="passkey-signin-txt" class="input-txt" placeholder="enter passkey" required>
+                <input type="checkbox" id="rememeber-cbox" ><span id="remember-txt">Remember me (^g^)</span>
+                <button type="submit" id="Signin-btn" class="sign-btn">Sign in</button>
+            </form>
+
+            <form id="signup-frm" class="input-frm">
+                <input type="text" id="usretag-signup-txt" class="input-txt" placeholder="type usertag" required>
+                <input type="text" id="email-signup-txt" class="input-txt" placeholder="type email" minlength="8" required>
+                <input type="password" id="passkey-signup-txt" class="input-txt" placeholder="type passkey" minlength="8" required>
+                <button type="submit" id="Signup-btn" class="sign-btn">Sign up</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="Login.js"></script>
+</body>
+</html>
